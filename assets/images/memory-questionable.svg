@@ -1,0 +1,15 @@
+<svg width="800" height="520" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#1a1535"/>
+      <stop offset="100%" stop-color="#2b2469"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg2)"/>
+  <path d="M100 350 L350 120 L700 350 Z" fill="#F6D365" opacity="0.2"/>
+  <circle cx="250" cy="210" r="54" fill="#FF7ECB" opacity="0.7"/>
+  <circle cx="500" cy="210" r="52" fill="#5FD1FF" opacity="0.7"/>
+  <path d="M375 175 L440 260 L378 330 L312 260 Z" fill="#F6D365" opacity="0.9"/>
+  <rect x="150" y="340" width="500" height="90" rx="16" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.2)"/>
+  <text x="400" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" fill="#F8FAFF" font-weight="700">QUESTIONABLE DECISIONS</text>
+</svg>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Secret Vault</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <div class="stars" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <div class="brand">Birthday Mission</div>
+          <nav class="nav-links" aria-label="Main navigation">
+            <a class="nav-link" href="index.html" data-page="index.html">Home</a>
+            <a class="nav-link" href="surprise.html" data-page="surprise.html">Surprise</a>
+            <a class="nav-link" href="talents.html" data-page="talents.html">Talents</a>
+            <!-- <a class="nav-link" href="roast.html" data-page="roast.html">Roast</a> -->
+            <!-- <a class="nav-link" href="games.html" data-page="games.html">Arcade</a> -->
+            <a class="nav-link" href="final.html" data-page="final.html">Final</a>
+            <a class="nav-link active" href="vault.html" data-page="vault.html">Vault</a>
+          </nav>
+          <!-- <button id="soundToggle" class="nav-btn" type="button" aria-pressed="true">🔊 Sound On</button> -->
+        </div>
+      </header>
+
+      <main class="container">
+        <section class="vault-box fade-up">
+          <div class="section-label">Secret Vault</div>
+          <h2>Access the hidden birthday archive</h2>
+          <p class="memo-line">Enter the code or answer the riddle to unlock the secret message.</p>
+          <div class="form-block">
+            <input id="vaultInput" type="text" placeholder="Enter the vault code" aria-label="Secret vault code" />
+            <button class="primary-btn" id="unlockBtn" type="button">Unlock the Vault</button>
+          </div>
+          <div class="secret-content" id="secretContent">
+            <h3>Access granted.</h3>
+            <p class="memo-line">OMG HAPPY BD BABYYYYYY</p>
+            <ul class="memo-line" style="padding-left: 20px; line-height: 1.8;">
+              <li>You are officially a legendary human being.</li>
+              <li>Your BOYFRIEND energy is elite.</li>
+              <li>I LOVEEEE YOUUUUUUU AAAAAAAAAAAAAAA</li>
+            </ul>
+            <img src="./assets/images/hott.jpg">
+            <span> HAPPY BIRTHDAAYYYY 😘😘😘😘😘😘</span>
+            <div class="button-row">
+              <a class="primary-btn" href="final.html">Return to the finale</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const config = window.BIRTHDAY_CONFIG || {};
+        const input = document.getElementById('vaultInput');
+        const unlockBtn = document.getElementById('unlockBtn');
+        const secret = document.getElementById('secretContent');
+        const code = (config.secretVaultCode || '[YOUR CODE]').toString();
+        const riddle = config.vaultRiddle || '[RIDDLE OR CLUE]';
+
+        const revealMessage = () => {
+          const value = input.value.trim();
+          if (value === code || value.toLowerCase() === riddle.toLowerCase()) {
+            if (secret) secret.classList.add('visible');
+            window.birthdayAudio.play('celebration');
+          } else {
+            if (secret) secret.classList.remove('visible');
+            window.alert('Wrong code. Try again or read the riddle clue.');
+          }
+        };
+
+        if (unlockBtn) {
+          unlockBtn.addEventListener('click', revealMessage);
+        }
+        if (input) {
+          input.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') revealMessage();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

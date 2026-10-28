@@ -1,0 +1,17 @@
+<svg width="800" height="520" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0b1223"/>
+      <stop offset="100%" stop-color="#1d2d5d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg1)"/>
+  <circle cx="650" cy="110" r="72" fill="#5FD1FF" opacity="0.22"/>
+  <circle cx="180" cy="100" r="94" fill="#9C7BFF" opacity="0.18"/>
+  <rect x="110" y="280" width="580" height="140" rx="26" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.2)"/>
+  <path d="M200 260 C250 200, 290 180, 330 260 L330 330 L200 330 Z" fill="#F6D365" opacity="0.8"/>
+  <path d="M470 260 C520 200, 560 180, 600 260 L600 330 L470 330 Z" fill="#5FD1FF" opacity="0.75"/>
+  <circle cx="240" cy="180" r="32" fill="#FF7ECB" opacity="0.8"/>
+  <circle cx="540" cy="180" r="28" fill="#B5C3E0" opacity="0.8"/>
+  <text x="400" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#F8FAFF" font-weight="700">PEAK CHAOS</text>
+</svg>

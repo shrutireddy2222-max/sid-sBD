@@ -1,0 +1,55 @@
+.game-arcade-wrap {
+  display: grid;
+  gap: 24px;
+}
+
+.game-stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+  color: var(--muted);
+}
+
+.status-pill {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(95,209,255,0.12);
+  border: 1px solid rgba(95,209,255,0.2);
+}
+
+.game-cta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+#arcade-menu {
+  display: block;
+}
+
+#cake-catch-game,
+#trivia-game,
+#memory-match-game,
+#reaction-game {
+  display: none;
+}
+
+#cake-catch-game.active,
+#trivia-game.active,
+#memory-match-game.active,
+#reaction-game.active {
+  display: block;
+}
+
+#trivia-game .question-wrap,
+#memory-match-game .match-wrap,
+#reaction-game .reaction-wrap {
+  margin-top: 16px;
+}
+
+.survived-button {
+  margin-top: 18px;
+}

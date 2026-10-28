@@ -1,0 +1,18 @@
+<svg width="800" height="520" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg4" x1="0" x2="1">
+      <stop offset="0%" stop-color="#091522"/>
+      <stop offset="100%" stop-color="#132c4d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg4)"/>
+  <circle cx="246" cy="182" r="70" fill="#5FD1FF" opacity="0.32"/>
+  <circle cx="540" cy="170" r="86" fill="#F6D365" opacity="0.28"/>
+  <path d="M210 360 C260 290, 290 270, 400 260 C500 250, 560 285, 590 370 L590 410 L210 410 Z" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)"/>
+  <path d="M260 330 L355 250 L410 320 L520 220" stroke="#F6D365" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="260" cy="330" r="14" fill="#F6D365"/>
+  <circle cx="355" cy="250" r="14" fill="#FF7ECB"/>
+  <circle cx="410" cy="320" r="14" fill="#5FD1FF"/>
+  <circle cx="520" cy="220" r="14" fill="#9C7BFF"/>
+  <text x="400" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#F8FAFF" font-weight="700">CORE MEMORIES</text>
+</svg>

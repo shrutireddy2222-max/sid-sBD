@@ -1,0 +1,20 @@
+<svg width="800" height="520" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="0" x2="1">
+      <stop offset="0%" stop-color="#101a2f"/>
+      <stop offset="100%" stop-color="#3a0e4d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg3)"/>
+  <circle cx="140" cy="120" r="60" fill="#9C7BFF" opacity="0.4"/>
+  <circle cx="660" cy="120" r="50" fill="#5FD1FF" opacity="0.35"/>
+  <rect x="120" y="160" width="560" height="220" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.18)"/>
+  <path d="M180 300 L270 220 L350 300 L430 180 L520 300 L620 220" stroke="#F6D365" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="180" cy="300" r="16" fill="#F6D365"/>
+  <circle cx="270" cy="220" r="16" fill="#FF7ECB"/>
+  <circle cx="350" cy="300" r="16" fill="#5FD1FF"/>
+  <circle cx="430" cy="180" r="16" fill="#F6D365"/>
+  <circle cx="520" cy="300" r="16" fill="#9C7BFF"/>
+  <circle cx="620" cy="220" r="16" fill="#FF7ECB"/>
+  <text x="400" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#F8FAFF" font-weight="700">LEGENDARY MOMENTS</text>
+</svg>
